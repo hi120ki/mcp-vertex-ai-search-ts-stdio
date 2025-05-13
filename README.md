@@ -1,4 +1,4 @@
-# MCP Server (Stdio) for Vertex AI Search (Discovery Engine)
+# MCP Server for Vertex AI Search
 
 ## Overview
 
@@ -40,3 +40,12 @@ $ gcloud auth login --update-adc
   }
 }
 ```
+
+## References
+
+- [Vertex AI Search](https://cloud.google.com/enterprise-search)
+- [Introduction to Vertex AI Search](https://cloud.google.com/generative-ai-app-builder/docs/enterprise-search-introduction)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
