@@ -1,0 +1,41 @@
+{
+  "name": "mcp-vertex-ai-search-ts-stdio",
+  "version": "0.0.1",
+  "description": "A mcp server for Vertex AI Search (Discovery Engine)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "test": "vitest --run",
+    "test:watch": "vitest"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hi120ki/mcp-vertex-ai-search-ts-stdio.git"
+  },
+  "keywords": [
+    "mcp",
+    "vertex",
+    "ai",
+    "search"
+  ],
+  "author": "hi120ki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hi120ki/mcp-vertex-ai-search-ts-stdio/issues"
+  },
+  "homepage": "https://github.com/hi120ki/mcp-vertex-ai-search-ts-stdio#readme",
+  "dependencies": {
+    "@google-cloud/discoveryengine": "^2.0.1",
+    "@modelcontextprotocol/sdk": "^1.11.2",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  }
+}
