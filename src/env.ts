@@ -1,11 +1,15 @@
-export function getEnvInt(name: string, required = true): number | undefined {
+export function getEnvInt(name: string, required = true, def?: number): number {
   const val = process.env[name];
   if (val === undefined || val === "") {
     if (required) {
       console.error(`[ENV ERROR] ${name} is required but not set.`);
       throw new Error(`${name} is required`);
     }
-    return undefined;
+    if (def !== undefined) {
+      return def;
+    }
+    console.error(`[ENV ERROR] ${name} is not set and no default provided.`);
+    throw new Error(`${name} is not set and no default provided`);
   }
   const n = Number(val);
   if (!Number.isInteger(n)) {

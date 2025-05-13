@@ -13,8 +13,11 @@ describe("getEnvInt", () => {
   it("Throws if the environment variable is not set and required=true", () => {
     expect(() => getEnvInt("TEST_INT")).toThrow();
   });
-  it("Returns undefined if the environment variable is not set and required=false", () => {
-    expect(getEnvInt("TEST_INT", false)).toBeUndefined();
+  it("Returns the default value if the environment variable is not set and required=false with default", () => {
+    expect(getEnvInt("TEST_INT", false, 123)).toBe(123);
+  });
+  it("Throws if the environment variable is not set and required=false with no default", () => {
+    expect(() => getEnvInt("TEST_INT", false)).toThrow();
   });
   it("Throws if the environment variable is not an integer", () => {
     process.env.TEST_INT = "abc";

@@ -13,7 +13,7 @@ const { ConversationalSearchServiceClient } = v1alpha;
 const SERVER_NAME = "mcp-vertex-ai-search-ts-stdio";
 const SERVER_VERSION = "0.0.1";
 
-let PROJECT: number | undefined;
+let PROJECT: number;
 let LOCATION: string;
 let ENGINE: string;
 let LANGUAGE: string;
