@@ -26,9 +26,8 @@ $ gcloud auth login --update-adc
         "-e", "ENGINE",
         "-e", "LANGUAGE",
         "-e", "GOOGLE_APPLICATION_CREDENTIALS=/tmp/adc.json",
-        "-v",
-        "~/.config/gcloud/application_default_credentials.json:/tmp/adc.json:ro",
-        "ghcr.io/hi120ki/mcp-vertex-ai-search-ts-stdio@sha256:54a24a9db6576ee7a23ab3356880d9210b41adcaa3098129ee20b0b4211f411c"
+        "-v", "~/.config/gcloud/application_default_credentials.json:/tmp/adc.json:ro",
+        "ghcr.io/hi120ki/mcp-vertex-ai-search-ts-stdio@sha256:8bc5027cd219cdcd0d6860e2e6a7a4059d566bb3b55dc5fdcbd7a1ebba52aeff"
       ],
       "env": {
         "PROJECT": "<your-project-number>",
