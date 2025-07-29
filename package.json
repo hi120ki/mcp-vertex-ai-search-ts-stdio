@@ -28,14 +28,14 @@
   },
   "homepage": "https://github.com/hi120ki/mcp-vertex-ai-search-ts-stdio#readme",
   "dependencies": {
-    "@google-cloud/discoveryengine": "^2.1.0",
-    "@modelcontextprotocol/sdk": "^1.12.1",
-    "zod": "^3.25.48"
+    "@google-cloud/discoveryengine": "^2.4.0",
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@types/node": "^22.15.29",
+    "@types/node": "^24.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
-    "vitest": "^3.2.0"
+    "vitest": "^3.2.4"
   }
 }
